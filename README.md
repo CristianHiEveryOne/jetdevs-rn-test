@@ -1,2 +1,5 @@
-# jetdevs-rn-test
-test for jetdevs
+# jetdevs-react-native-test
+Test for Jetdevs interview
+
+run `yarn install`
+then `yarn start`
