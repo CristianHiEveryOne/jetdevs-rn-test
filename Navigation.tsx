@@ -68,8 +68,7 @@ const Navigation = () => {
                 {currentUser?.email ? (
                     <Stack.Screen name={EScreenRoutes.HOME} component={NavBarBottom} />
                 ):(
-                    <Stack.Screen name={EScreenRoutes.HOME} component={NavBarBottom} />
-                    // <Stack.Screen name={EScreenRoutes.LOGIN} component={LoginScreen} />
+                    <Stack.Screen name={EScreenRoutes.LOGIN} component={LoginScreen} />
                 )}
             </Stack.Navigator>
         </NavigationContainer>
