@@ -11,10 +11,6 @@ function FavoriteScreen() {
     const dispatch = useDispatch()
     const fetchedFavoriteUsers = useSelector(favoriteUsers)
 
-    React.useEffect(() => {
-        dispatch(fetchFavoriteUsers())
-    }, [])
-
     const renderUserItem = ({ item }: { item: IUser }) => {
         return <FavoriteUserCard user={item} />;
     }

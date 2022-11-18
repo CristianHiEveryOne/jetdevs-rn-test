@@ -35,7 +35,6 @@ export const saveFavoriteUsers = createAsyncThunk(
   'favorite-users/save',
   async (_, { getState }) => {
     const state: any = getState()
-    console.log("🚀 ~ file: user.reducer.ts ~ line 38 ~ state", state)
     try {
       await AsyncStorage.setItem(KEY_FAVORITE_USERS, JSON.stringify(state?.favoriteUsers ?? []))
     } catch(e) {
